@@ -4,6 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SVG grafika</title>
+    <style>
+        table, td, th {
+            border: 1px solid black;
+            text-align: center;
+            border-collapse: collapse;
+            padding: 10px;
+        }
+    </style>
 </head>
 <body>
 
@@ -13,6 +21,37 @@
         <circle r="80" fill="red" cx="150" cy="220"/>
         <polygon points="300,20 350,190 250,190" style="fill:lime;stroke:purple;stroke-width:3" />
     </svg>
+    <br>
+
+    <h3>Tablice</h3>
+    <table >
+        <tr>
+            <th>Ime</th>
+            <td>Prezime</td>
+            <td>Razred</td>
+        </tr>
+
+        <tr>
+            <td>Petar</td>
+            <td>Simić</td>
+            <td>3.E</td>
+        </tr>
+
+        <tr>
+            <td>Ivo</td>
+            <td>Horvat</td>
+            <td>4.A</td>
+        </tr>
+    </table>
+
+    <h3>Forme</h3>
+    <form action="#" method="get">
+        <label for="ime">Ime:</label>
+        <input type="text" id="ime"> <br> 
+        <label for="prezime">Prezime:</label>
+        <input type="text" id="prezime"> <br>
+        <input type="submit" value="Pošalji">
+    </form>
 
 </body>
 </html>
