@@ -13,10 +13,13 @@ function updateAttemps(){
     attempts.innerHTML="Pokušaji:" + pokusaji;
 }
 
+updateAttemps();
+
 function checkNumber(event){
     event.preventDefault(); //ne osvjezava stranicu
+    let value=parseInt(input.value);
+    console.log(value);
 }
-
 function NewGame(){
 
 }
