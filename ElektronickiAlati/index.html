@@ -6,86 +6,117 @@
     <title>Elektronički alati</title>
 
     <style>
+
+    * {
+    box-sizing: border-box;
+
+    }
+
     body {
-        font-family: Arial, sans-serif;
-        background: #f5f5f5;
+        font-family: "Segoe UI", Arial, sans-serif;
+        background: linear-gradient(135deg, #e3f2fd, #f5f5f5);
+        margin: 0;
+        padding: 0;
     }
 
-    .page {
-        width: 800px;
-        margin: 30px auto;
-        background: white;
-        padding: 30px 40px;
-        box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-
-    h1{
+    h1 {
         text-align: center;
-        margin-bottom: 30px;
-        letter-spacing: 1px;
+        margin: 30px 0;
+        letter-spacing: 2px;
+        color: #0d47a1;
     }   
-    
-    
 
-    .ohm {
-        margin-bottom: 35px;
+    .kartica {
+        width: 900px;
+        margin: 25px auto;
+        background: #ffffff;
+        padding: 25px 30px;
+        border-radius: 12px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        border-left: 6px solid #1976d2;
     }
 
-    .section h2 {
-        font-size: 18px;
-        border-bottom: 1px solid #000;
-        display: inline-block;
-        padding-bottom: 3px;
+    .kartica h2 {
+        margin-bottom: 20px;
+        color: #1976d2;
+        border-bottom: 2px solid #e3f2fd;
+        padding-bottom: 6px;
+    }
+
+    .osnova {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 30px;
+    }
+
+    .form {
+        flex: 1;
+    }
+
+    .image {
+        width: 240px;
+        text-align: center;
+    }
+
+    .image img {
+        max-width: 100%;
+        border-radius: 8px;
+        border: 1px solid #ddd;
+        background: #fafafa;
+        padding: 5px;
     }
 
     .row {
         display: flex;
         align-items: center;
-        margin: 8px 0;
+        margin-bottom: 12px;
     }
 
     label {
-        width: 160px;
+        width: 140px;
+        font-size: 14px;
+        color: #333;
     }
 
     input {
-        width: 80px;
-        padding: 4px;
-        margin-right: 10px;
+        width: 100px;
+        padding: 6px 8px;
+        border-radius: 6px;
+        border: 1px solid #bbb;
     }
+
 
     .unos {
-        margin-right: 20px;
+        margin-right: 8px;
     }
+
+    button {
+        background: linear-gradient(135deg, #1976d2, #0d47a1);
+        color: white;
+        border: none;
+        padding: 8px 18px;
+        border-radius: 8px;
+        cursor: pointer;
+        font-weight: bold;
+        letter-spacing: 0.5px;
+        transition: 0.2s;
+    }
+
+
 
     .result {
-        margin-left: 100px;
-        margin-top: 10px;
-        border: 1px solid #000;
-        display: inline-block;
-        padding: 8px 15px;
+        margin-top: 15px;
+        padding: 10px 15px;
+        border-radius: 8px;
+        background: #e3f2fd;
+        border: 1px solid #90caf9;
         font-weight: bold;
+        color: #0d47a1;
+        display: inline-block;
+        min-width: 180px;
     }
 
-    .diagram {
-        border: 1px solid #000;
-        width: 120px;
-        height: 160px;
-        margin-left: 40px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 14px;
-    }
-
-    .osnova {
-        display: flex;
-    }
-
-    .small-note {
-        margin-top: 10px;
-        font-style: italic;
-    }
 
     </style>
 
@@ -93,9 +124,10 @@
 
 <body>
 
+
 <h1>ELEKTROTEHNIKA - ALATI</h1>
 
-
+    <div class="kartica">
     <h2>Ohmov zakon</h2>
 
     <div class="osnova">
@@ -123,9 +155,12 @@
             <img src="./slike/OhmovZakon.jpg" style="width: 200px;">
         </div>
     </div>
+    </div>
 
     <br><br><br>
 
+    
+    <div class="kartica">
     <h2>Djelilo napona</h2>
     <div class="osnova">
         <div>
@@ -155,9 +190,11 @@
             <img src="./slike/DjeliloNapona.jpg" alt="" style="width: 200px;">
         </div>
     </div>
+    </div>
 
     <br><br><br>
 
+    <div class="kartica">
     <h2>Serijsko spajanje otpornika</h2>
     <div class="osnova">
         <div>
@@ -192,10 +229,12 @@
             <img src="./slike/SerijskiSpoj.png" alt="" style="width: 200px;">
         </div>
     </div>
+    </div>
 
 
     <br><br><br>
-
+    
+    <div class="kartica">
     <h2>Paralelno spajanje otpornika</h2>
     <div class="osnova">
         <div>
@@ -230,9 +269,11 @@
             <img src="./slike/SerijskiSpoj.png" alt="" style="width: 200px;">
         </div>
     </div>
+    </div>
 
     <br><br><br>
 
+    <div class="kartica">
     <h2>Serijsko spajanje kondenzatora</h2>
     <div class="osnova">
         <div>
@@ -267,9 +308,11 @@
             <img src="./slike/SerijskiSpojKondenzatora.jpg" alt="" style="width: 200px;">
         </div>
     </div>
+    </div>
 
     <br><br><br>
 
+    <div class="kartica">
     <h2>Paralelno spajanje kondenzatora</h2>
     <div class="osnova">
         <div>
@@ -304,10 +347,11 @@
             <img src="./slike/ParalelnoSpajanjeKondenzatora.jpg" alt="" style="width: 150px; height: 200px;">
         </div>
     </div>
+    </div>
 
     <br><br><br>
 
-
+    <div class="kartica">
     <h2>Serijsko spajanje zavojnice</h2>
     <div class="osnova">
         <div>
@@ -342,10 +386,12 @@
             <img src="./slike/SerijskoSpajanjeZavojnice.png" alt="" style="width: 200px; height: 50px; margin-top: 40px;">
         </div>
     </div>
+    </div>
 
     <br><br><br>
 
 
+    <div class="kartica">
     <h2>Paralelno spajanje zavojnice</h2>
     <div class="osnova">
         <div>
@@ -380,12 +426,12 @@
             <img src="./slike/ParalelnoSpajanjeZavojnicee.png" alt="" style="width: 300px; height: 100px; margin-top: 20px;">
         </div>
     </div>
+    </div>
 
     <br><br><br>
 
 
-
-
+    <div class="kartica">
     <h2>Računanje induktivnosti zračne zavojnice</h2>
     <div class="osnova">
         <div>
@@ -414,10 +460,11 @@
             <img src="./slike/induktivnosti zracne zavojnice.jpg" alt="" style="width: 300px; height: 100px; margin-top: 0px;">
         </div>
     </div>
+    </div>
 
     <br><br><br>
 
-
+    <div class="kartica">
     <h2>Računanje induktivnog otpora</h2>
     <div class="osnova">
         <div>
@@ -442,10 +489,12 @@
             <img src="./slike/induktivni otpor.jpg" alt="" style="width: 300px; height: 100px; margin-top: 0px;">
         </div>
     </div>
+    </div>
 
     <br><br><br>
 
 
+    <div class="kartica">
     <h2>Računanje kapacitivnog otpora</h2>
     <div class="osnova">
         <div>
@@ -469,6 +518,7 @@
         <div>
             <img src="./slike/kapacitivni otpor.jpg" alt="" style="width: 300px; height: 100px; margin-top: 0px;">
         </div>
+    </div>
     </div>
 
     <br><br><br>

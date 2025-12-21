@@ -10,14 +10,14 @@ function izracunajOhm(event) {
 
     if (isNaN(R) || isNaN(U) || R <= 0) {
         ohmResult.innerHTML = "Unesi ispravne vrijednosti!";
-        ohmResult.style.color = "crimson";
+        ohmResult.style.color = "#2a78b8ff";
         return;
     }
 
     let I = U / R;
 
     ohmResult.innerHTML = "Struja I = " + I.toFixed(2) + " A";
-    ohmResult.style.color = "green";
+    ohmResult.style.color = "#2a78b8ff";
 }
 ohmBtn.addEventListener("click", izracunajOhm);
 
@@ -38,14 +38,14 @@ function izracunajDjeliloNapona(event) {
 
     if (isNaN(R1) || isNaN(R2) || isNaN(U) || R1<=0 || R2<=0 || U<=0) {
         naponResult1.innerHTML = "Unesi ispravne vrijednosti!";
-        naponResult1.style.color = "crimson";
+        naponResult1.style.color = "#2a78b8ff";
         return;
     }
 
     let Uiz=U*(R2/(R1+R2));
 
     naponResult1.innerHTML = "Djelilo napona = " + Uiz.toFixed(2) + " V";
-    naponResult1.style.color = "green";
+    naponResult1.style.color = "#2a78b8ff";
 }
 btnNapon1.addEventListener("click", izracunajDjeliloNapona);
 
@@ -68,13 +68,13 @@ function izracunajSerijskoSpajanjeOtpornika(event) {
 
     if (isNaN(R1) || isNaN(R2) || isNaN(R3) || isNaN(R4) || R1<=0 || R2<=0 || R3<=0 || R4<=0) {
         SSOresult.innerHTML = "Unesi ispravne vrijednosti!";
-        SSOresult.style.color = "crimson";
+        SSOresult.style.color = "#2a78b8ff";
         return;
     }
 
     let ssoRiz=R1+R2+R3+R4;
     SSOresult.innerHTML = "Serijski otpor = " + ssoRiz.toFixed(2) + " Ω";
-    SSOresult.style.color = "green";
+    SSOresult.style.color = "#2a78b8ff";
 }
 btnSSO.addEventListener("click", izracunajSerijskoSpajanjeOtpornika);
 
@@ -95,13 +95,13 @@ function izracunajParalelnoSpajanjeOtpornika(event) {
 
     if (isNaN(R1) || isNaN(R2) || isNaN(R3) || isNaN(R4) || R1<=0 || R2<=0 || R3<=0 || R4<=0) {
         PSOresult.innerHTML = "Unesi ispravne vrijednosti!";
-        PSOresult.style.color = "crimson";
+        PSOresult.style.color = "#2a78b8ff";
         return;
     }
 
     let psoRiz=(1/R1)+(1/R2)+(1/R3)+(1/R4);
     PSOresult.innerHTML = "Paralelni otpor = " + psoRiz.toFixed(2) + " Ω";
-    PSOresult.style.color = "green";
+    PSOresult.style.color = "#2a78b8ff";
 }
 btnPSO.addEventListener("click", izracunajParalelnoSpajanjeOtpornika);
 
@@ -124,14 +124,14 @@ function izracunajSerijskoSpajanjeKondenzatora(event) {
 
     if (isNaN(C1) || isNaN(C2) || isNaN(C3) || isNaN(C4) || C1<=0 || C2<=0 || C3<=0 || C4<=0) {
         SSCresult.innerHTML = "Unesi ispravne vrijednosti!";
-        SSCresult.style.color = "crimson";
+        SSCresult.style.color = "#2a78b8ff";
         return;
     }
 
     let sscRiz=(1/C1)+(1/C2)+(1/C3)+(1/C4);
     sscRiz=1/sscRiz;
     SSCresult.innerHTML = "Serijski naboj = " + sscRiz.toFixed(2) + " F";
-    SSCresult.style.color = "green";
+    SSCresult.style.color = "#2a78b8ff";
 }
 btnSSC.addEventListener("click", izracunajSerijskoSpajanjeKondenzatora);
 
@@ -155,14 +155,14 @@ function izracunajParalelnogSpajanjeKondenzatora(event) {
 
     if (isNaN(C1) || isNaN(C2) || isNaN(C3) || isNaN(C4) || C1<=0 || C2<=0 || C3<=0 || C4<=0) {
         PSCresult.innerHTML = "Unesi ispravne vrijednosti!";
-        PSCresult.style.color = "crimson";
+        PSCresult.style.color = "#2a78b8ff";
         return;
     }
 
     let pscCiz=C1+C2+C3+C4;
 
     PSCresult.innerHTML = "Paralelni naboj = " + pscCiz.toFixed(2) + " F";
-    PSCresult.style.color = "green";
+    PSCresult.style.color = "#2a78b8ff";
 }
 btnPSC.addEventListener("click", izracunajParalelnogSpajanjeKondenzatora);
 
@@ -184,14 +184,14 @@ function izracunajSerijskogSpajanjaZavojnice(event) {
 
     if (isNaN(L1) || isNaN(L2) || isNaN(L3) || isNaN(L4) || L1<=0 || L2<=0 || L3<=0 || L4<=0) {
         SSZresult.innerHTML = "Unesi ispravne vrijednosti!";
-        SSZresult.style.color = "crimson";
+        SSZresult.style.color = "#2a78b8ff";
         return;
     }
 
     let sszLiz=L1+L2+L3+L4;
 
     SSZresult.innerHTML = "Serijska induktivnost = " + sszLiz.toFixed(2) + " H";
-    SSZresult.style.color = "green";
+    SSZresult.style.color = "#2a78b8ff";
 }
 btnSSZ.addEventListener("click", izracunajSerijskogSpajanjaZavojnice);
 
@@ -215,7 +215,7 @@ function izracunajParalelnogSpajanjaZavojnice(event) {
 
     if (isNaN(L1) || isNaN(L2) || isNaN(L3) || isNaN(L4) || L1<=0 || L2<=0 || L3<=0 || L4<=0) {
         PSZresult.innerHTML = "Unesi ispravne vrijednosti!";
-        PSZresult.style.color = "crimson";
+        PSZresult.style.color = "#2a78b8ff";
         return;
     }
 
@@ -223,7 +223,7 @@ function izracunajParalelnogSpajanjaZavojnice(event) {
     pszLiz=1/pszLiz;
 
     PSZresult.innerHTML = "Paralelna induktivnost = " + pszLiz.toFixed(2) + " H";
-    PSZresult.style.color = "green";
+    PSZresult.style.color = "#2a78b8ff";
 }
 btnPSZ.addEventListener("click", izracunajParalelnogSpajanjaZavojnice);
 
@@ -245,14 +245,14 @@ function izracunajInduktivnostZracneZavojnice(event) {
 
     if (isNaN(N) || isNaN(S) || isNaN(l) || N<=0 || S<=0 || l<=0 ) {
         IZZresult.innerHTML = "Unesi ispravne vrijednosti!";
-        IZZresult.style.color = "crimson";
+        IZZresult.style.color = "#2a78b8ff";
         return;
     }
 
     let izzLiz=((4*3.1416)*(1/10000000))*(((N*N)*S)/l);
 
     IZZresult.innerHTML = "Induktivnost = " + izzLiz.toFixed(2) + " H";
-    IZZresult.style.color = "green";
+    IZZresult.style.color = "#2a78b8ff";
 }
 btnIZZ.addEventListener("click", izracunajInduktivnostZracneZavojnice);
 
@@ -272,14 +272,14 @@ function izracunajInduktivniOtpor(event) {
 
     if (isNaN(W) || isNaN(L) || L<=0 || W<=0) {
         RIOresult.innerHTML = "Unesi ispravne vrijednosti!";
-        RIOresult.style.color = "crimson";
+        RIOresult.style.color = "#2a78b8ff";
         return;
     }
 
     let rioXl=2*(3.1416)*W*L;
 
     RIOresult.innerHTML = "Induktivni otpor = " + rioXl.toFixed(2) + " Ω";
-    RIOresult.style.color = "green";
+    RIOresult.style.color = "#2a78b8ff";
 }
 btnRIO.addEventListener("click", izracunajInduktivniOtpor);
 
@@ -297,13 +297,13 @@ function izracunajKapacitivniOtpor(event) {
 
     if (isNaN(W) || isNaN(C) || C<=0 || W<=0) {
         RCOresult.innerHTML = "Unesi ispravne vrijednosti!";
-        RCOresult.style.color = "crimson";
+        RCOresult.style.color = "#2a78b8ff";
         return;
     }
 
     let rcoXc=1/(2*(3.1416)*W*C);
 
     RCOresult.innerHTML = "Induktivni otpor = " + rcoXc.toFixed(2) + " Ω";
-    RCOresult.style.color = "green";
+    RCOresult.style.color = "#2a78b8ff";
 }
 btnRCO.addEventListener("click", izracunajKapacitivniOtpor);
