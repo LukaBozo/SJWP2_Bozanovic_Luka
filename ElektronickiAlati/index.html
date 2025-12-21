@@ -100,28 +100,27 @@
 
     <div class="osnova">
         <div>
-            <div class="row">
-                <label>Unesi otpor:</label>
-                <input type="text" class="unos">
-                <label>Ω</label>
-            </div>
-
-            <div class="row">
-                <label>Unesi napon:</label>
-                <input type="text" class="unos">
-                <label>V</label>
-            </div>
-
-            <div class="row">
-                <button>Izračunaj struju</button>
-            </div>
-
-            <div class="result"></div>
-
+        <div class="row">
+            <label>Unesi otpor:</label>
+            <input type="text" id="ohmR" class="unos">
+            <label>Ω</label>
         </div>
 
-        <div >
-            <img src="./slike/OhmovZakon.jpg" alt="" style="width: 200px;">
+        <div class="row">
+            <label>Unesi napon:</label>
+            <input type="text" id="ohmU" class="unos">
+            <label>V</label>
+        </div>
+
+        <div class="row">
+            <button id="ohmBtn">Izračunaj struju</button>
+        </div>
+
+            <div class="result" id="ohmResult"></div>
+        </div>
+
+        <div>
+            <img src="./slike/OhmovZakon.jpg" style="width: 200px;">
         </div>
     </div>
 
@@ -132,25 +131,25 @@
         <div>
             <div class="row">
                 <label>Unesi R1:</label>
-                <input type="text" class="unos">
+                <input type="text" id="ohmR1" class="unos">
                 <label>Ω</label>
             </div>
             <div class="row">
                 <label>Unesi R2:</label>
-                <input type="text" class="unos">
+                <input type="text" id="ohmR2" class="unos">
                 <label>Ω</label>
             </div>
             <div class="row">
                 <label>Unesi Uul:</label>
-                <input type="text" class="unos">
+                <input type="text" id="volt1" class="unos">
                 <label>V</label>
             </div>
 
             <div class="row">
-                <button>Izračunaj Uiz</button>
+                <button id="btnNapon1">Izračunaj Uiz</button>
             </div>
 
-            <div class="result"></div>
+            <div class="result" id="naponResult1"></div>
         </div>
         <div>
             <img src="./slike/DjeliloNapona.jpg" alt="" style="width: 200px;">
@@ -164,31 +163,30 @@
         <div>
             <div class="row">
                 <label>Unesi R1:</label>
-                <input type="text" class="unos">
+                <input type="text" id="SSOR1" class="unos">
                 <label>Ω</label>
             </div>
             <div class="row">
                 <label>Unesi R2:</label>
-                <input type="text" class="unos">
+                <input type="text" id="SSOR2" class="unos">
                 <label>Ω</label>
             </div>
             <div class="row">
                 <label>Unesi R3:</label>
-                <input type="text" class="unos">
+                <input type="text" id="SSOR3" class="unos">
                 <label>Ω</label>
             </div>
             <div class="row">
                 <label>Unesi R4:</label>
-                <input type="text" class="unos">
+                <input type="text" id="SSOR4" class="unos">
                 <label>Ω</label>
             </div>
 
             <div class="row">
-                <button>Izračunaj otpor</button>
+                <button id="btnSSO">Izračunaj otpor</button>
             </div>
-            <!-- Zbrajaju se -->
 
-            <div class="result"></div>
+            <div class="result" id="SSOresult"></div>
         </div>
         <div>
             <img src="./slike/SerijskiSpoj.png" alt="" style="width: 200px;">
@@ -203,31 +201,30 @@
         <div>
             <div class="row">
                 <label>Unesi R1:</label>
-                <input type="text" class="unos">
+                <input type="text" id="PSOR1" class="unos">
                 <label>Ω</label>
             </div>
             <div class="row">
                 <label>Unesi R2:</label>
-                <input type="text" class="unos">
+                <input type="text" id="PSOR2" class="unos">
                 <label>Ω</label>
             </div>
             <div class="row">
                 <label>Unesi R3:</label>
-                <input type="text" class="unos">
+                <input type="text" id="PSOR3" class="unos">
                 <label>Ω</label>
             </div>
             <div class="row">
                 <label>Unesi R4:</label>
-                <input type="text" class="unos">
+                <input type="text" id="PSOR4" class="unos">
                 <label>Ω</label>
             </div>
 
             <div class="row">
-                <button>Izračunaj otpor</button>
+                <button id="btnPSO">Izračunaj otpor</button>
             </div>
-            <!-- 1/R1 + 1/R2... -->
 
-            <div class="result"></div>
+            <div class="result" id="PSOresult"></div>
         </div>
         <div>
             <img src="./slike/SerijskiSpoj.png" alt="" style="width: 200px;">
@@ -241,30 +238,30 @@
         <div>
             <div class="row">
                 <label>Unesi C1:</label>
-                <input type="text" class="unos">
+                <input type="text" id="sscC1" class="unos">
                 <label>F</label>
             </div>
             <div class="row">
                 <label>Unesi C2:</label>
-                <input type="text" class="unos">
+                <input type="text" id="sscC2" class="unos">
                 <label>F</label>
             </div>
             <div class="row">
                 <label>Unesi C3:</label>
-                <input type="text" class="unos">
+                <input type="text" id="sscC3" class="unos">
                 <label>F</label>
             </div>
             <div class="row">
                 <label>Unesi C4:</label>
-                <input type="text" class="unos">
+                <input type="text" id="sscC4" class="unos">
                 <label>F</label>
             </div>
 
             <div class="row">
-                <button>Izračunaj naboj</button>
+                <button id="btnSSC">Izračunaj naboj</button>
             </div>
 
-            <div class="result"></div>
+            <div class="result" id="SSCresult"></div>
         </div>
         <div>
             <img src="./slike/SerijskiSpojKondenzatora.jpg" alt="" style="width: 200px;">
@@ -278,30 +275,30 @@
         <div>
             <div class="row">
                 <label>Unesi C1:</label>
-                <input type="text" class="unos">
+                <input type="text" id="pscC1" class="unos">
                 <label>F</label>
             </div>
             <div class="row">
                 <label>Unesi C2:</label>
-                <input type="text" class="unos">
+                <input type="text" id="pscC2" class="unos">
                 <label>F</label>
             </div>
             <div class="row">
                 <label>Unesi C3:</label>
-                <input type="text" class="unos">
+                <input type="text" id="pscC3" class="unos">
                 <label>F</label>
             </div>
             <div class="row">
                 <label>Unesi C4:</label>
-                <input type="text" class="unos">
+                <input type="text" id="pscC4" class="unos">
                 <label>F</label>
             </div>
 
             <div class="row">
-                <button>Izračunaj naboj</button>
+                <button id="btnPSC">Izračunaj naboj</button>
             </div>
 
-            <div class="result"></div>
+            <div class="result" id="PSCresult"></div>
         </div>
         <div>
             <img src="./slike/ParalelnoSpajanjeKondenzatora.jpg" alt="" style="width: 150px; height: 200px;">
@@ -315,31 +312,31 @@
     <div class="osnova">
         <div>
             <div class="row">
-                <label>Unesi C1:</label>
-                <input type="text" class="unos">
-                <label>F</label>
+                <label>Unesi L1:</label>
+                <input type="text" id="sszL1" class="unos">
+                <label>H</label>
             </div>
             <div class="row">
-                <label>Unesi C2:</label>
-                <input type="text" class="unos">
-                <label>F</label>
+                <label>Unesi L2:</label>
+                <input type="text" id="sszL2" class="unos">
+                <label>H</label>
             </div>
             <div class="row">
-                <label>Unesi C3:</label>
-                <input type="text" class="unos">
-                <label>F</label>
+                <label>Unesi L3:</label>
+                <input type="text" id="sszL3" class="unos">
+                <label>H</label>
             </div>
             <div class="row">
-                <label>Unesi C4:</label>
-                <input type="text" class="unos">
-                <label>F</label>
+                <label>Unesi L4:</label>
+                <input type="text" id="sszL4" class="unos">
+                <label>H</label>
             </div>
 
             <div class="row">
-                <button>Izračunaj naboj</button>
+                <button id="btnSSZ">Izračunaj induktivitet</button>
             </div>
 
-            <div class="result"></div>
+            <div class="result" id="SSZresult"></div>
         </div>
         <div>
             <img src="./slike/SerijskoSpajanjeZavojnice.png" alt="" style="width: 200px; height: 50px; margin-top: 40px;">
@@ -353,40 +350,131 @@
     <div class="osnova">
         <div>
             <div class="row">
-                <label>Unesi C1:</label>
-                <input type="text" class="unos">
-                <label>F</label>
+                <label>Unesi L1:</label>
+                <input type="text" id="pszL1" class="unos">
+                <label>H</label>
             </div>
             <div class="row">
-                <label>Unesi C2:</label>
-                <input type="text" class="unos">
-                <label>F</label>
+                <label>Unesi L2:</label>
+                <input type="text" id="pszL2" class="unos">
+                <label>H</label>
             </div>
             <div class="row">
-                <label>Unesi C3:</label>
-                <input type="text" class="unos">
-                <label>F</label>
+                <label>Unesi L3:</label>
+                <input type="text" id="pszL3" class="unos">
+                <label>H</label>
             </div>
             <div class="row">
-                <label>Unesi C4:</label>
-                <input type="text" class="unos">
-                <label>F</label>
+                <label>Unesi L4:</label>
+                <input type="text" id="pszL4" class="unos">
+                <label>H</label>
             </div>
 
             <div class="row">
-                <button>Izračunaj naboj</button>
+                <button id="btnPSZ">Izračunaj induktivitet</button>
             </div>
 
-            <div class="result"></div>
+            <div class="result" id="PSZresult"></div>
         </div>
         <div>
-            <img src="./slike/ParalelnoSpajanjeZavojnicee.png" alt="" style="width: 200px; height: 50px; margin-top: 40px;">
+            <img src="./slike/ParalelnoSpajanjeZavojnicee.png" alt="" style="width: 300px; height: 100px; margin-top: 20px;">
         </div>
     </div>
 
     <br><br><br>
 
 
+
+
+    <h2>Računanje induktivnosti zračne zavojnice</h2>
+    <div class="osnova">
+        <div>
+            <div class="row">
+                <label>Unesi N:</label>
+                <input type="text" id="izzN" class="unos">
+            </div>
+            <div class="row">
+                <label>Unesi S:</label>
+                <input type="text" id="izzS" class="unos">
+                <label>m2</label>
+            </div>
+            <div class="row">
+                <label>Unesi l:</label>
+                <input type="text" id="izzl" class="unos">
+                <label>m</label>
+            </div>
+
+            <div class="row">
+                <button id="btnIZZ">Izračunaj induktivitet</button>
+            </div>
+
+            <div class="result" id="IZZresult"></div>
+        </div>
+        <div>
+            <img src="./slike/induktivnosti zracne zavojnice.jpg" alt="" style="width: 300px; height: 100px; margin-top: 0px;">
+        </div>
+    </div>
+
+    <br><br><br>
+
+
+    <h2>Računanje induktivnog otpora</h2>
+    <div class="osnova">
+        <div>
+            <div class="row">
+                <label>Unesi W:</label>
+                <input type="text" id="rioW" class="unos">
+                <label>Hz</label>
+            </div>
+            <div class="row">
+                <label>Unesi L:</label>
+                <input type="text" id="rioL" class="unos">
+                <label>H</label>
+            </div>
+
+            <div class="row">
+                <button id="btnRIO">Izračunaj XL</button>
+            </div>
+
+            <div class="result" id="RIOresult"></div>
+        </div>
+        <div>
+            <img src="./slike/induktivni otpor.jpg" alt="" style="width: 300px; height: 100px; margin-top: 0px;">
+        </div>
+    </div>
+
+    <br><br><br>
+
+
+    <h2>Računanje kapacitivnog otpora</h2>
+    <div class="osnova">
+        <div>
+            <div class="row">
+                <label>Unesi W:</label>
+                <input type="text" id="rcoW" class="unos">
+                <label>Hz</label>
+            </div>
+            <div class="row">
+                <label>Unesi C:</label>
+                <input type="text" id="rcoC" class="unos">
+                <label>F</label>
+            </div>
+
+            <div class="row">
+                <button id="btnRCO">Izračunaj Xc</button>
+            </div>
+
+            <div class="result" id="RCOresult"></div>
+        </div>
+        <div>
+            <img src="./slike/kapacitivni otpor.jpg" alt="" style="width: 300px; height: 100px; margin-top: 0px;">
+        </div>
+    </div>
+
+    <br><br><br>
+
+
+    <script src="index.js"></script>
 
 
 </body>
