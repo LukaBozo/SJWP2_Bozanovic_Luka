@@ -1,10 +1,7 @@
+let Input=document.getElementById("textInput");
+let count=document.getElementById("counter");
 
-
-document.getElementById("Counter").addEventListener("input",function(){
-    let text=document.getElementById("textInput").value;
-    let dul=text.length;
+Input.addEventListener("input", function(){
+    count.textContent=Input.value.length;
 });
-
-
-document.getElementById("Counter").innerHTML="Letter Count: " + dul;
 
