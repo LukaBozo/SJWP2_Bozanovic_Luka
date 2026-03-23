@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+<meta charset="UTF-8">
+<title>Galerija Filmova</title>
+<style>
+body {
+  margin: 0;
+  font-family: Arial;
+  background: #0b1a2a;
+  color: white;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 15px;
+  background: #1c2b3a;
+}
+
+.nav button {
+  padding: 10px 20px;
+  background: #2d3e50;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.nav button:hover {
+  background: #3f5870;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  padding: 30px;
+}
+
+.card {
+  border: 2px dashed #4da6ff;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.hidden { display: none; }
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  background: #1c2b3a;
+}
+</style>
+</head>
+<body>
+
+<div class="nav">
+  <button onclick="show('filmovi')">FILMOVI</button>
+  <button onclick="show('serije')">SERIJE</button>
+  <button onclick="show('igrice')">IGRICE</button>
+</div>
+
+<div id="filmovi" class="gallery">
+  <div class="card">
+    <img src="slike/Avengers.jpg">
+    <p>Avengers Endgame</p>
+  </div>
+
+  <div class="card">
+    <img src="slike/WarMachine.jpeg">
+    <p>War Machine</p>
+  </div>
+
+  <div class="card">
+    <img src="slike/film3.jpg">
+    <p>Project Hail Mary</p>
+  </div>
+  
+  <div class="card">
+    <img src="slike/film4.jpeg">
+    <p>The Fantastic Four: First Steps</p>
+  </div>
+
+  <div class="card">
+    <img src="slike/film5.jpg">
+    <p>Ballerina: From the World of John Wick</p>
+  </div>
+
+  <div class="card">
+    <img src="slike/film6.jpeg">
+    <p>Thunderbolts</p>
+  </div>
+
+  <div class="card">
+    <img src="slike/film7.jpg">
+    <p>28 Years Later</p>
+  </div>
+
+  <div class="card">
+    <img src="slike/film8.png">
+    <p>Mortal Kombat 2</p>
+  </div>
+
+  <div class="card">
+    <img src="slike/film9.jpg">
+    <p>Superman </p>
+  </div>
+
+  <div class="card">
+    <img src="slike/film10.jpeg">
+    <p>Avatar: Fire and Ash</p>
+  </div>
+
+  <div class="card">
+    <img src="slike/film11.jpg">
+    <p>Wicked: For Good</p>
+  </div>
+
+  <div class="card">
+    <img src="slike/film12.png">
+    <p>Michael</p>
+  </div>
+
+  <div class="card">
+    <img src="slike/film13.jpeg">
+    <p>The Super Mario Galaxy Movie</p>
+  </div>
+
+  <div class="card">
+    <img src="slike/film14.jpg">
+    <p>Elio</p>
+  </div>
+
+  <div class="card">
+    <img src="slike/film15.jpg">
+    <p>Zootopia 2</p>
+  </div>
+
+  <div class="card">
+    <img src="slike/film16.jpg">
+    <p>Mickey 17</p>
+  </div>
+
+  <div class="card">
+    <img src="slike/film17.jpg">
+    <p>Flow</p>
+  </div>
+
+  <div class="card">
+    <img src="slike/film18.jpg">
+    <p>The Running Man</p>
+  </div>
+
+  <div class="card">
+    <img src="slike/film19.jpg">
+    <p>A Knight of the Seven Kingdoms</p>
+  </div>
+
+  <div class="card">
+    <img src="slike/film20.jpeg">
+    <p>Tron: Ares</p>
+  </div>
+
+</div>
+
+<div id="serije" class="gallery hidden">
+  <div class="card">
+    <img src="slike_serije/serija1.jpg">
+    <p>Peaky Blinders: The Immortal Man</p>
+  </div>
+
+  <div class="card">
+    <img src="slike_serije/serija2.jpg">
+    <p>Taboo</p>
+  </div>
+
+  <div class="card">
+    <img src="slike_serije/serija3.jpg">
+    <p>Boardwalk Empire</p>
+  </div>
+
+  <div class="card">
+    <img src="slike_serije/serija4.jpg">
+    <p>The Sopranos</p>
+  </div>
+
+  <div class="card">
+    <img src="slike_serije/serija5.jpg">
+    <p>The Wire</p>
+  </div>
+
+  <div class="card">
+    <img src="slike_serije/serija6.jpg">
+    <p>Breaking Bad </p>
+  </div>
+
+  <div class="card">
+    <img src="slike_serije/serija7.jpg">
+    <p>Better Call Saul</p>
+  </div>
+
+  <div class="card">
+    <img src="slike_serije/serija8.jpg">
+    <p>Narcos</p>
+  </div>
+
+
+
+
+  <!-- NASTAVITI -->
+
+
+
+
+
+
+
+  <div class="card">
+    <img src="slike/moneyheist.jpg">
+    <p>Money Heist</p>
+  </div>
+
+  <div class="card">
+    <img src="slike/squidgame.jpg">
+    <p>Squid Game</p>
+  </div>
+
+  <div class="card">
+    <img src="slike/moneyheist.jpg">
+    <p>Money Heist</p>
+  </div>
+
+  <div class="card">
+    <img src="slike/squidgame.jpg">
+    <p>Squid Game</p>
+  </div>
+
+  <div class="card">
+    <img src="slike/moneyheist.jpg">
+    <p>Money Heist</p>
+  </div>
+
+  <div class="card">
+    <img src="slike/squidgame.jpg">
+    <p>Squid Game</p>
+  </div>
+
+  <div class="card">
+    <img src="slike/moneyheist.jpg">
+    <p>Money Heist</p>
+  </div>
+
+  <div class="card">
+    <img src="slike/squidgame.jpg">
+    <p>Squid Game</p>
+  </div>
+
+  <div class="card">
+    <img src="slike/moneyheist.jpg">
+    <p>Money Heist</p>
+  </div>
+
+  <div class="card">
+    <img src="slike/squidgame.jpg">
+    <p>Squid Game</p>
+  </div>
+
+  <div class="card">
+    <img src="slike/moneyheist.jpg">
+    <p>Money Heist</p>
+  </div>
+
+  <div class="card">
+    <img src="slike/squidgame.jpg">
+    <p>Squid Game</p>
+  </div>
+
+</div>
+
+
+
+
+
+<!-- IGRICE -->
+<div id="igrice" class="gallery hidden">
+  <div class="card">
+    <img src="slike/gta5.jpg">
+    <p>GTA V</p>
+  </div>
+
+  <div class="card">
+    <img src="slike/fifa.jpg">
+    <p>FIFA 23</p>
+  </div>
+
+</div>
+
+
+
+
+
+<div class="footer">
+  Božanović | 4.B
+</div>
+
+
+
+
+<script>
+function show(section) {
+  document.getElementById('filmovi').classList.add('hidden');
+  document.getElementById('serije').classList.add('hidden');
+  document.getElementById('igrice').classList.add('hidden');
+
+  document.getElementById(section).classList.remove('hidden');
+}
+</script>
+
+</body>
+</html>
