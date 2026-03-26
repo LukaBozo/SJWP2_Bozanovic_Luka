@@ -1,15 +1,20 @@
 <!DOCTYPE html>
-<html lang="hr">
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Galerija Filmova</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Božanović">
+    <meta name="description" content="Galerija filmova, serija i igrica">
+    <meta name="keywords" content="filmovi, serije, igrice, galerija">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerija</title>
+</head>
 <style>
 
 
 body {
   margin: 0;
   font-family: Arial;
-  background: #0f172a; /* tamno plava (moderno) */
+  background: #0f172a; 
   color: white;
 }
 
@@ -19,12 +24,12 @@ body {
   justify-content: center;
   gap: 20px;
   padding: 15px;
-  background: #020617; /* skoro crno */
+  background: #020617; 
 }
 
 .nav button {
   padding: 10px 20px;
-  background: #1e293b; /* tamno siva/plava */
+  background: #1e293b; 
   border: none;
   color: white;
   cursor: pointer;
@@ -33,7 +38,7 @@ body {
 }
 
 .nav button:hover {
-  background: #3b82f6; /* plavi hover */
+  background: #3b82f6; 
 }
 
 .gallery {
@@ -68,7 +73,7 @@ body {
   text-align: center;
   padding: 20px;
   background: #020617;
-  color: #94a3b8; /* svijetlo siva */
+  color: #94a3b8; 
   margin-top: 50px;
 }
 
@@ -127,22 +132,22 @@ body {
     <p>Avengers Endgame</p>
   </div>
 
-    <div class="card" onclick="openModal('War Machine','Priča o vojniku i naprednoj tehnologiji.','Don Cheadle','Don Cheadle')">
-      <img src="slike/WarMachine.jpeg">
-      <p>War Machine</p>
-    </div>
+  <div class="card" onclick="openModal('War Machine','Priča o vojniku i naprednoj tehnologiji.','Don Cheadle','Don Cheadle')">
+    <img src="slike/WarMachine.jpeg">
+    <p>War Machine</p>
+  </div>
 
-    <div class="card" onclick="openModal('Project Hail Mary','Astronaut pokušava spasiti Zemlju od katastrofe.','Phil Lord i Christopher Miller','Ryan Gosling')">
-      <img src="slike/film3.jpg">
-      <p>Project Hail Mary</p>
-    </div>
+  <div class="card" onclick="openModal('Project Hail Mary','Astronaut pokušava spasiti Zemlju od katastrofe.','Phil Lord i Christopher Miller','Ryan Gosling')">
+    <img src="slike/film3.jpg">
+    <p>Project Hail Mary</p>
+  </div>
   
-    <div class="card" onclick="openModal('The Fantastic Four: First Steps','Superheroji dobivaju moći i štite svijet.','Matt Shakman','Pedro Pascal')">
-      <img src="slike/film4.jpeg">
-      <p>The Fantastic Four: First Steps</p>
-    </div>
+  <div class="card" onclick="openModal('The Fantastic Four: First Steps','Superheroji dobivaju moći i štite svijet.','Matt Shakman','Pedro Pascal')">
+    <img src="slike/film4.jpeg">
+    <p>The Fantastic Four: First Steps</p>
+  </div>
 
-    <div class="card" onclick="openModal('Ballerina','Plaćena ubojica traži osvetu.','Len Wiseman','Ana de Armas')">
+  <div class="card" onclick="openModal('Ballerina','Plaćena ubojica traži osvetu.','Len Wiseman','Ana de Armas')">
     <img src="slike/film5.jpg">
     <p>Ballerina: From the World of John Wick</p>
   </div>
@@ -221,6 +226,7 @@ body {
     <img src="slike/film20.jpeg">
     <p>Tron: Ares</p>
   </div>
+
 </div>
 
 
@@ -334,107 +340,106 @@ body {
 
 
 <div id="igrice" class="gallery hidden">
-  <div class="card">
+
+  <div class="card" onclick="openModal('Super Mario Bros. 3','Klasična platformska avantura s Mariom.','Nintendo','Mario')">
     <img src="slike_igrica/igra1.png">
     <p>Super Mario Bros. 3</p>
   </div>
 
-  <div class="card">
+  <div class="card" onclick="openModal('The Witcher 3: Wild Hunt','Geralt traži svoju posvojenu kćer u otvorenom svijetu.','CD Projekt Red','Geralt of Rivia')">
     <img src="slike_igrica/igra2.jpg">
     <p>The Witcher 3: Wild Hunt</p>
   </div>
 
-  <div class="card">
+  <div class="card" onclick="openModal('Red Dead Redemption 2','Priča o odmetnicima na Divljem zapadu.','Rockstar Games','Arthur Morgan')">
     <img src="slike_igrica/igra3.jpg">
     <p>Red Dead Redemption 2</p>
   </div>
 
-  <div class="card">
+  <div class="card" onclick="openModal('Minecraft','Sandbox igra gdje gradiš i istražuješ svijet.','Mojang','Steve')">
     <img src="slike_igrica/igra4.png">
     <p>Minecraft</p>
   </div>
 
-  <div class="card">
+  <div class="card" onclick="openModal('Half-Life 2','Znanstvenik se bori protiv vanzemaljske okupacije.','Valve','Gordon Freeman')">
     <img src="slike_igrica/igra5.jpg">
     <p>Half-Life 2</p>
   </div>
 
-  <div class="card">
+  <div class="card" onclick="openModal('Dark Souls','Teška fantasy igra puna izazova.','FromSoftware','Chosen Undead')">
     <img src="slike_igrica/igra6.jpg">
     <p>Dark Souls</p>
   </div>
 
-  <div class="card">
+  <div class="card" onclick="openModal('Grand Theft Auto V','Kriminalna priča s tri protagonista.','Rockstar Games','Michael, Trevor, Franklin')">
     <img src="slike_igrica/igra7.jpg">
     <p>Grand Theft Auto V</p>
   </div>
 
-  <div class="card">
+  <div class="card" onclick="openModal('Portal 2','Puzzle igra s portalima i humorom.','Valve','Chell')">
     <img src="slike_igrica/igra8.jpg">
     <p>Portal 2</p>
   </div>
 
-  <div class="card">
+  <div class="card" onclick="openModal('The Last of Us','Emotivna priča o preživljavanju.','Naughty Dog','Joel i Ellie')">
     <img src="slike_igrica/igra9.jpg">
     <p>The Last of Us</p>
   </div>
 
-  <div class="card">
+  <div class="card" onclick="openModal('Super Mario 64','3D avantura s Mariom.','Nintendo','Mario')">
     <img src="slike_igrica/igra10.jpg">
     <p>Super Mario 64</p>
   </div>
 
-  <div class="card">
+  <div class="card" onclick="openModal('Overwatch','Timska pucačina s različitim herojima.','Blizzard','Tracer')">
     <img src="slike_igrica/igra11.jpg">
     <p>Overwatch</p>
   </div>
 
-  <div class="card">
+  <div class="card" onclick="openModal('Doom (1993)','Kultna pucačina protiv demona.','id Software','Doom Slayer')">
     <img src="slike_igrica/igra12.jpg">
     <p>Doom (1993)</p>
   </div>
 
-  <div class="card">
+  <div class="card" onclick="openModal('Celeste','Platformer o penjanju na planinu.','Maddy Makes Games','Madeline')">
     <img src="slike_igrica/igra13.png">
     <p>Celeste</p>
   </div>
 
-  <div class="card">
+  <div class="card" onclick="openModal('Mass Effect 2','Sci-fi RPG o spašavanju galaksije.','BioWare','Commander Shepard')">
     <img src="slike_igrica/igra14.png">
     <p>Mass Effect 2</p>
   </div>
 
-  <div class="card">
+  <div class="card" onclick="openModal('FC 26','Nogometna simulacija.','EA Sports','Razni igrači')">
     <img src="slike_igrica/igra15.jpg">
     <p>FC 26</p>
   </div>
 
-  <div class="card">
+  <div class="card" onclick="openModal('The Elder Scrolls V: Skyrim','Otvoreni svijet pun zmajeva i magije.','Bethesda','Dragonborn')">
     <img src="slike_igrica/igra16.png">
     <p>SKYRIM</p>
   </div>
 
-  <div class="card">
+  <div class="card" onclick="openModal('God of War','Kratos se bori protiv bogova.','Santa Monica Studio','Kratos')">
     <img src="slike_igrica/igra17.jpg">
     <p>God Of War</p>
   </div>
 
-  <div class="card">
+  <div class="card" onclick="openModal('Elden Ring','Velika fantasy avantura otvorenog svijeta.','FromSoftware','Tarnished')">
     <img src="slike_igrica/igra18.jpg">
     <p>Elden Ring</p>
   </div>
 
-  <div class="card">
+  <div class="card" onclick="openModal('Resident Evil','Survival horror protiv zombija.','Capcom','Leon S. Kennedy')">
     <img src="slike_igrica/igra19.jpg">
     <p>Resident Evil</p>
   </div>
 
-  <div class="card">
+  <div class="card" onclick="openModal('PES 2016','Nogometna simulacija.','Konami','Razni igrači')">
     <img src="slike_igrica/igra20.jpg">
     <p>PES 2016</p>
   </div>
-
-  
 
 </div>
 
@@ -442,19 +447,15 @@ body {
 <div id="modal" class="modal">
   <div class="modal-content">
     <span class="close" onclick="closeModal()">&times;</span>
-    <h2 id="m-naziv"></h2>
-    <p id="m-opis"></p>
-    <p><b>Redatelj:</b> <span id="m-redatelj"></span></p>
-    <p><b>Glavni glumac:</b> <span id="m-glumac"></span></p>
+      <h2 id="m-naziv"></h2>
+      <p id="m-opis"></p>
+      <p><b>Redatelj:</b> <span id="m-redatelj"></span></p>
+      <p><b>Glavni lik:</b> <span id="m-glumac"></span></p>
   </div>
 </div>
 
 
-<div class="footer">
-  Božanović | 4.B
-</div>
-
-
+<div class="footer">Božanović | 4.B</div>
 
 
 <script>
@@ -465,8 +466,6 @@ function show(section) {
 
   document.getElementById(section).classList.remove('hidden');
 }
-
-
 </script>
 
 <script src="index.js"></script>

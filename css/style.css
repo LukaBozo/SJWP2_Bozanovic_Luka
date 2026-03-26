@@ -247,6 +247,22 @@ a:focus {
   border: none;
 }
 
+.card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.card-link .box {
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.card-link .box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
 .user_option .order_online:hover {
   background-color: #e69c00;
 }
